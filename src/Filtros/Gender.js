@@ -41,7 +41,7 @@ function Gender(prueba='male') {
     );
     const setOfSpecies =[... new Set(data?.map((Species)=>Species.species))];
     const listOfSpecies = setOfSpecies.map((item)=>
-        <Link to={'./filtergender'} state={{ from: item }}>
+        <Link to={'./filterspecies'} state={{ from: item }}>
             <li class="menu-item">
                 <button onClick={handleMenuSpecies}>{item}</button>
             </li>
@@ -50,7 +50,7 @@ function Gender(prueba='male') {
     );
     const setOfStatus =[... new Set(data?.map((Status)=>Status.status))];
     const listOfStatus = setOfStatus.map((item)=>
-        <Link to={'./filtergender'} state={{ from: item }}>
+        <Link to={'./filterstatus'} state={{ from: item }}>
             <li class="menu-item">
                 <button onClick={handleMenuStatus} type='input' >{item}</button>    
             </li>

@@ -11,6 +11,8 @@ import { QueryClientProvider, QueryClient} from '@tanstack/react-query';
 import FilterName from './pages/FilterName.js';
 import FullCard from './pages/FullCard.js';
 import FilterGender from './pages/FilterGender.js';
+import FilterStatus from './pages/FilterStatus.js';
+import FilterSpecies from './pages/FilterSpecies.js';
 import Home from './components/Home';
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
   {
     path:'/filtergender',
     element: <FilterGender />
+  },
+  {
+    path:'/filterstatus',
+    element: <FilterStatus />
+  },
+  {
+    path:'/filterspecies',
+    element: <FilterSpecies />
   }
 
 ]);

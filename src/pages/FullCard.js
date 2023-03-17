@@ -10,9 +10,6 @@ export default function FullCard(){
     const foundCard = data.find(obj => {
         return obj.id === from;
       });
-    
-      // 👇️ {id: 1, country: 'Austria'}
-      console.log(foundCard.name);
     return (
         <div>
             <div id="nav-bar-header">

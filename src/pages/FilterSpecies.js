@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import { useLocation } from 'react-router-dom';
 
-function FilterGender() {
+function FilterSpecies() {
     const {data} = UseGetAllCharacter();
     const location = useLocation();
     const { from } = location.state;
@@ -14,7 +14,7 @@ function FilterGender() {
                 <NavBar></NavBar>
             </div>
             <div class='container-card '>
-                {data?.filter(character=>character.gender.includes(from)
+                {data?.filter(character=>character.species.includes(from)
                 ).map((character)=>(
                 
                     <div id='card' key={character.id}>
@@ -37,7 +37,7 @@ function FilterGender() {
 
     );
 }
-export default FilterGender;
+export default FilterSpecies;
 
 
 
